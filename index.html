@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+  </head>
+  <body id="body">
+    <div class="card">
+      <h1>Responsible pet ownership</h1>
+      <p class="subtitle">
+        Do you want to learn what responsible pet ownership means? Please share
+        your data with us.
+      </p>
+      <form action="">
+        <div class="form-group">
+          <label for="first-name" class="text-white">Name</label>
+          <input type="text" name="firstName" id="first-name" />
+        </div>
+        <div class="form-group">
+          <label for="email" class="text-white">Email</label>
+          <input type="email" name="email" id="email" />
+        </div>
+        <div class="form-group">
+          <label for="age" class="text-white">Age (optional)</label>
+          <input
+            type="number"
+            name="age"
+            id="age"
+            min="1"
+            step="1"
+            placeholder="Only numbers"
+          />
+        </div>
+        <div class="form-group">
+          <label for="pets" class="text-white">Amount of pets</label>
+          <select name="amountPets" id="pets">
+            <option disabled selected value>Select the amount of pets</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">over 4</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>
+            Would you take another survey about pets in the future?
+            <br />
+            <label for="additional-survey" class="text-white">
+              <input
+                type="checkbox"
+                id="additional-survey"
+                name="additionalSurvey"
+              />
+              Yes, I would like to take more surveys.
+            </label>
+          </p>
+        </div>
+
+        <div class="form-group">
+          <p>
+            Please select an option to attend a responsible pet ownership
+            meeting
+            <br />
+            <input type="radio" id="on-line" name="assitance" value="onLine" />
+            <label for="on-line">On line</label>
+            <br />
+            <input
+              type="radio"
+              id="in-person"
+              name="assitance"
+              value="inPerson"
+            />
+            <label for="in-person">In person</label>
+            <br />
+          </p>
+        </div>
+
+        <div class="form-group">
+          <label for="comments" class="text-white"
+            >Do you have comments or suggestions?</label
+          >
+          <textarea
+            name="comments"
+            id="comments"
+            id="comments"
+            placeholder="Leave us your message here..."
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
