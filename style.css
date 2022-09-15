@@ -94,7 +94,13 @@ label {
   padding: 5% 15px;
   margin: auto;
   border-radius: 10px;
-  width: 60%;
+  width: 80%;
+}
+
+@media only screen and (min-width: 768px) {
+  .card {
+    width: 60%;
+  }
 }
 .form-group {
   margin: 10px 10%;
